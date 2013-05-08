@@ -1,0 +1,149 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <title>Demonstração de Formulário jQuery Mobile </title> 
+      <link rel="stylesheet" href="http://localhost/gdse/bsi10/Aula006-PhoneGap/jquery.mobile-1.0a4.1.min.css" />
+      <script src="http://localhost/gdse/bsi10/Aula006-PhoneGap/jquery-1.5.min.js"></script>
+      <script src="http://localhost/gdse/bsi10/Aula006-PhoneGap/jquery.mobile-1.0a4.1.min.js"></script>
+   </head> 
+
+   <body> 
+ 
+      <div data-role="page" id="home">
+       
+         <div data-role="header">
+            <h1>Pedido de Sorvete</h1>
+         </div>
+       
+         <div data-role="content">
+            <form action="#" method="get">
+           
+               <div data-role="fieldcontain">
+                  <label for="name">Nome:</label>
+                  <input type="text" name="name" id="name" value=""  />
+               </div>
+               
+               <div data-role="controlgroup">
+                  <legend>Qual sabor você deseja?</legend>
+                 
+                  <input type="checkbox" name="vanilla" id="vanilla" class="custom" />
+                  <label for="vanilla">Baunilha</label>
+                 
+                  <input type="checkbox" name="chocolate" id="chocolate" class="custom" />
+                  <label for="chocolate">Chocolate</label>
+                 
+                  <input type="checkbox" name="strawberry" id="strawberry" class="custom" />
+                  <label for="strawberry">Morango</label>
+                 
+               </div>    
+               
+               <div data-role="fieldcontain">
+                  <label for="quantity">Quantidade:</label>
+                  <input type="range" name="quantity" id="quantity" value="1" min="1" max="10"  />
+               </div>
+          
+               <div data-role="fieldcontain">
+                  <label for="sprinkles">Confete:</label>
+                  <select name="sprinkles" id="sprinkles" data-role="slider">
+                     <option value="off">No</option>
+                     <option value="on">Yes</option>
+                  </select> 
+               </div>
+          
+               <div data-role="fieldcontain">
+                  <label for="store">Retira na loja:</label>
+                  <select name="store" id="store">
+                     <option value="mainStreet">Av. do Estado</option>
+                     <option value="libertyAvenue">Rua 3000</option>
+                     <option value="circleSquare">Praça Bandeirantes</option>
+                     <option value="angelRoad">Av. das Nações</option>
+                  </select>
+               </div>
+               
+               <div data-role="fieldcontain">
+                  <label for="busca">Pesquisa:</label>
+                  <input type="search" name="busca" id="busca" value=""  />
+               </div>
+
+               <div data-role="fieldcontain">
+                  <label for="fone">Telefone:</label>
+                  <input type="tel" name="fone" id="fone" value=""  />
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="link">URL:</label>
+                  <input type="url" name="link" id="link" value=""  />
+               </div>
+
+               <div data-role="fieldcontain">
+                  <label for="e-mail">Contato:</label>
+                  <input type="email" name="e-mail" id="e-mail" value=""  />
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="senha">Senha:</label>
+                  <input type="password" name="senha" id="senha" value=""  />
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="datahora">Data e hora:</label>
+                  <input type="datetime" name="datahora" id="datahora" value=""  />
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="data">Data:</label>
+                  <input type="date" name="data" id="data" value=""  />
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="mes">Mês:</label>
+                  <input type="month" name="mes" id="mes" value=""  />
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="hora">Pesquisa:</label>
+                  <input type="time" name="hora" id="hora" value=""  />
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="datalocal">Data local:</label>
+                  <input type="datetime-local" name="datalocal" id="datalocal" value=""  />
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="numero">Número:</label>
+                  <input type="number" name="numero" id="numero" value=""  />
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="cor">Cor:</label>
+                  <input type="color" name="cor" id="cor" value=""  />
+               </div>
+               <div data-role="controlgroup">
+                  <legend>Escolha uma opção:</legend>
+                  <label for="radio1">Radio 1:</label>
+                  <input type="radio" name="radio" id="radio1" value=""  />
+                  <label for="radio2">Radio 2:</label>
+                  <input type="radio" name="radio" id="radio2" value=""  />
+                  <label for="radio3">Radio 3:</label>
+                  <input type="radio" name="radio" id="radio3" value=""  />
+               </div>
+               <div data-role="controlgroup" data-type="horizontal" data-mini="true">
+                  <legend>Escolha uma opção:</legend>
+                  <input type="radio" name="radiox" id="radio4" value=""  />
+                  <label for="radio4">Radio 1:</label>
+                  <input type="radio" name="radiox" id="radio5" value=""  />
+                  <label for="radio5">Radio 2:</label>
+                  <input type="radio" name="radiox" id="radio6" value=""  />
+                  <label for="radio6">Radio 3:</label>
+               </div>
+               <div data-role="fieldcontain">
+                  <label for="arquivo">Arquivo:</label>
+                  <input type="file" name="arquivo" id="arquivo" value=""  />
+               </div>
+               
+               <div class="ui-body-b">
+                  <fieldset class="ui-grid-a">
+                     <div class="ui-block-a"><button type="submit" data-theme="d">Cancela</button></div>
+                     <div class="ui-block-b"><button type="submit" data-theme="a">Enviar</button></div>     
+                  </fieldset>
+               </div>
+            </form>
+          </div>
+            
+        </div>
+       
+      </div>
+   </body>
+</html>

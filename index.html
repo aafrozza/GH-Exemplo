@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>XML Survey - by ~Frozza</title>
+      <link rel="stylesheet" href="http://localhost/gdse/bsi10/Aula006-PhoneGap/jquery.mobile-1.0a4.1.min.css" />
+      <script type="text/javascript" src="http://localhost/gdse/bsi10/Aula006-PhoneGap/jquery-1.5.min.js"></script>
+      <script type="text/javascript" src="http://localhost/gdse/bsi10/Aula006-PhoneGap/jquery.mobile-1.0a4.1.min.js"></script>
+      
+      <script type="text/javascript">
+         function visualizar(){
+            try { //Modern Browser
+               xmlDoc=document.implementation.createDocument("","",null);
+               xmlDoc.async=false;
+               xmlDoc.load(document.itemForm.arq.value);
+               if (xmlDoc.documentElement.nodeName=="parsererror") {
+                  alert(xmlDoc.documentElement.childNodes[0].nodeValue);
+                  return(null);
+               }
+            } catch(e) { 
+               alert(e.message)
+            }
+            alert(xmlDOC);
+         }
+         
+         function limpar() {
+            document.itemForm.arq.value = "";
+         }
+      </script>
+   </head>
+   <body>
+      <div data-role="page">
+         <div data-role="header">
+            <h1>TESTE: tomara que funcione com ajuda do Gabriel</h1>
+         </div>
+         <div data-role="content">
+            <form action="#" method="get" name="itemForm">
+               <div data-role="fieldcontain">
+                  <label for="arq">Arquivo:</label>
+                  <input type="file" name="arq" id="arq" value="" />
+               </div>
+               <div class="ui-body-b">
+                  <fieldset class="ui-grid-a">
+                     <div class="ui-block-a"><button type="submit" data-theme="d" onClick="limpar()">Cancela</button></div>
+                     <div class="ui-block-b"><button type="submit" data-theme="a" onClick="visualizar()">Ver</button></div>     
+                  </fieldset>
+               </div>
+            </form>
+               </div>
+         <div data-role="footer">
+            <p>Prof. Angelo Augusto Frozza</p>
+         </div>
+      </div>
+   </body>
+</html>
+

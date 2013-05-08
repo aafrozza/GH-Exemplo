@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<?xml-stylesheet type="text/xsl" href="BSI10-GDSE-Aula006-Survey.xsl"?>
+
+<survey>
+   <metadata>
+      <id>1</id>
+      <title>Questionário 01</title>
+      <description>Questionário para levantar dados.</description>
+      <creationDate>15/04/2013</creationDate>
+      <version>1</version>
+      <validity>
+         <begin>16/04/2013</begin>
+         <end>30/04/2013</end>
+      </validity>
+   </metadata>
+   <issues>
+      <question id="1" type="text" length="30">
+         <label>Qual seu nome?</label>
+      </question>
+      <question id="2" type="selection">
+         <label>Qual seu estado?</label>
+         <option seq="1">SC</option>
+         <option seq="2">RS</option>
+         <option seq="3">PR</option>
+      </question>
+   </issues>
+   <buttons>
+      <submit>Enviar</submit>
+      <reset>Limpar</reset>
+   </buttons>
+</survey>
